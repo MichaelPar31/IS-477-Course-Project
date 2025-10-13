@@ -1,7 +1,7 @@
 # Project Plan - NBA Salary and Performance Data Management
 
 ## Overview - 
-The goal for our project is to design and implement a reproducable data management lifecycle. Our project will apply several modules and aspects of IS 477 on the game of Basketball, exploring the relationship between player performance and salaries in the NBA. Basketball has grown into a Sport that utilizes analytics and data for many different decisions. Our team will act as a Data Analyst for a NBA team, creating a structrued and repeateable workflow that will follow the FAIR principles. We will follow Data Management and Curation techniques and best practices to get the best results in our project. 
+The goal for our project is to design and implement a reproducible data management lifecycle. Our project will apply several modules and aspects of IS 477 on the game of Basketball, exploring the relationship between player performance and salaries in the NBA. Basketball has grown into a Sport that utilizes analytics and data for many different decisions. Our team will act as a Data Analyst for a NBA team, creating a structured and repeataable workflow that will follow the FAIR principles. We will follow Data Management and Curation techniques and best practices to get the best results in our project. Our goal is to be able to create a reproducible project by creating documentation and providing sufficient information while making sure we comply with terms of use and accurately cite any data and software used. Overall we want to create a well organized and quality Data Analaysis on the game of Basketball.
 
 ## Research Question - Is there a Correlation between Basketball Salary and Player Efficiency? Which Performance metrics are most predictive of a higher Salary? 
 These questions are significant because it connects Data with real decisions NBA General Managers have to make everyday. Being able to understand which metrics are most important for higher salaries will allow Executives to craft the best team they can. The questions can be answered utilizing the correct datasets and data science techniques. 
@@ -28,9 +28,9 @@ Week 3 - Extraction and Enrichment and Data Integration. Create scripts used to 
 
 Week 4 - Document data quality and Clean Data. Create scripts use to profile and clean data, along with documentation. Scripts used to create regression analysis and find correlation. Create visualizations, along with documentation. (Michael)
 
-Week 5 - Workflow automation and Provenance. Document describing how to repeat our project. (Richard)
+Week 5 - Workflow automation and Provenance. Automate end-to-end analysis workflow. Document describing how to repeat our project. (Richard)
 
-Week 6 - Reproducibility and Transparency and Metadata and Data Documentation. (Both)
+Week 6 - Reproducibility and Transparency and Metadata and Data Documentation. Create Data Dictionary and Codebook. Create descriptive metadata that describes our project. (Both)
 
 ## Constraints - 
 asf
