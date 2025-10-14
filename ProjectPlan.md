@@ -33,7 +33,14 @@ Week 5 - Workflow automation and Provenance. Automate end-to-end analysis workfl
 Week 6 - Reproducibility and Transparency and Metadata and Data Documentation. Create Data Dictionary and Codebook. Create descriptive metadata that describes our project. (Both)
 
 ## Constraints - 
-asf
+- Data limitations: The Kaggle datasets we plan to use may not include complete or up-to-date data for the 2025 NBA season, since community-contributed data does not update as fast as the official documented data. There are also some missing records or inconsistent updates that could affect the accuracy of our analysis, especially for recent players.
+- Ethical/legal restrictions: Dataset 1 is licensed under CC0: Public Domain, allowing free use and redistribution. Dataset 2 is licensed under MIT License, which permits use with attribution. We must ensure proper citation and comply with Kaggle's terms of service, which may restrict how we redistribute raw data files in our GitHub repository. Also, even though the data is publicly available, using player names and salary information involves privacy and fairness considerations. Players’ salaries are public because of league transparency policies, but we must avoid misuse or misrepresentation of this information. 
+
 
 ## Gaps - 
-asdf
+First, we need to confirm data licenses and whether redistribution or transformation is allowed. Checking rules for Data Licensing and Redistribution of raw Kaggle data may be limited by terms of use, requiring clear documentation instead of direct sharing. We must ensure that we are in compliance with these terms and will avoid including copyrighted or restricted data directly in our GitHub repository. We will review the dataset pages for license details and reach out to the dataset creators if necessary. If redistribution is restricted, we will provide documentation and code for data acquisition instead of including the raw data in our repository. 
+
+Second, the historical stats dataset may lack advanced analytics metrics (e.g., Win Shares, Player Efficiency Rating, Box Plus/Minus, Usage Rate) that could provide stronger predictive power for salary analysis. If the initial correlation results are weak with basic statistics, we may need to calculate derived metrics or source additional data to enhance our analysis.
+
+Finally, we need to finalize our approach for integrating the two datasets effectively. This involves determining the most reliable way to join player salary data with historical performance statistics, ensuring consistency across both sources. Some challenges include name and date formatting discrepancies between datasets. To address these issues, we plan to design a data integration schema that defines clear rules for merging, including name normalization methods, season alignment logic, and handling of unmatched entries. Before implementing the full data pipeline, we will consult our instructor for feedback to ensure our schema is both technically sound and analytically appropriate for our project goals.
+
