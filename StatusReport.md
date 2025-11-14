@@ -3,7 +3,8 @@
 ## Overview
 
 ## Progress Report by Task
-### Week 1:
+### Week 1: 
+Completed everything in our Week 1 project plan. Finalized our Research Question of Which Player Stats affect the Salary of a Player the most? We confirmed both our Datasets from Kaggle and identified Key Variables of Points, Assists, Rebounds, Turnovers, Player, and Salary. The Script for our Data Acquisition and Integrity is in the file title dataAcquisitionScript.py.
 
 ### Week 2:
 Before we begin loading and working with the data, we must first outline the ethical, legal, and policy constraints relevant to our project analyzing the correlation between NBA player salaries and performance. It is important that we adhere to the FAIR principles to create a reproducable and responsible data management lifecycle. 
