@@ -6,7 +6,7 @@ import gzip
 import io
 
 csv_salaries_path = "IS-477-Course-Project/NBASalaries.csv"
-csv_stats_path = "IS-477-Course-Project/player_stats.csv"
+csv_stats_path = "IS-477-Course-Project/NBAPlayerStats.csv"
 
 response = requests.get(csv_salaries_path)
 with open("nba_salaries.csv", "wb") as f:
