@@ -15,3 +15,11 @@
 
 ### Week 6:
 
+## Updated Timeline
+
+## Individual Contribution
+### Michael -
+
+### Richard -
+
+
