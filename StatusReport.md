@@ -21,12 +21,16 @@ When handling data about real individuals, even public figures, we must consider
 ### Week 3:
 
 ### Week 4:
-
+Not started.
 ### Week 5:
-
+Not Started.
 ### Week 6:
+Not Started
 
 ## Updated Timeline
+Week 4 - 11/17-11/24
+Week 5 - 11/24-11/31
+Week 6 - 12/1-12/8
 
 ## Individual Contribution
 ### Michael -
