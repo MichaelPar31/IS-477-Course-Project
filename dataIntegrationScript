@@ -1,0 +1,20 @@
+salary_df_clean = salary_df[['Player', 'Salary', 'Season']]
+player_data_df_clean = player_data_df_actual
+player_data_df_clean = player_data_df_clean.rename(columns={
+    "SEASON_ID": "Season",
+    "Name": "Player",
+})
+player_data_df_clean['Season'] = player_data_df_clean['Season'].str[:4].astype(int)
+
+def normalize_name(name):
+    name = str(name).strip().lower()
+    return name
+
+player_data_df_clean['Player'] = player_data_df_clean['Player'].apply(normalize_name)
+salary_df_clean['Player'] = salary_df_clean['Player'].apply(normalize_name)
+
+joined = salary_df_clean.merge(
+    player_data_df_clean,
+    on = ['Player', 'Season'],
+    how = 'inner'
+)
