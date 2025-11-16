@@ -1,6 +1,7 @@
 # Interim Status Report
 
 ## Overview
+We are still on track with our original timeline and have had no difficulties so far. 
 
 ## Progress Report by Task
 ### Week 1: 
@@ -41,8 +42,8 @@ Week 6 - 12/1-12/8. Finish up the Project before the deadline.
 We didn't change our project from our Status Report as we didn't have any concerning comments. First of all Richard and I worked together on all of the project. We had a shared notebook where we did our code and shared our script on GitHub. We changed the way we did things where it was split up in weeks, instead we worked together and helped each other out. 
 
 ## Individual Contribution
-### Michael - We both talked about and agreed on the conceptual part of our project, research questions, variables, and storage techniques. I did the IntegrationScript and Documentation, as well as the Documentation for the other scripts. I also did the dataRelationScript. Along with this I helped out Richard with any questions he had along the way. 
+Michael - We both talked about and agreed on the conceptual part of our project, research questions, variables, and storage techniques. I did the IntegrationScript and Documentation, as well as the Documentation for the other scripts. Along with this I helped out Richard with any questions he had along the way. 
 
-### Richard -
+Richard -
 
 
