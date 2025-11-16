@@ -1,8 +1,5 @@
 # Interim Status Report
 
-## Overview
-We are still on track with our original timeline and have had no difficulties so far. 
-
 ## Progress Report by Task
 ### Week 1: 
 Completed everything in our Week 1 project plan. Finalized our Research Question of Which Player Stats affect the Salary of a Player the most? We confirmed both our Datasets from Kaggle Dataset 1 is [NBA Player Salaries (2000-2025)](https://www.kaggle.com/datasets/ratin21/nba-player-salaries-2000-2025) and Dataset 2 is [Historical NBA Player Stats Database](https://www.kaggle.com/datasets/flynn28/historical-nba-player-stats-database/data), identifying Key Variables of Points, Assists, Rebounds, Turnovers, Player, and Salary. The Script for our Data Acquisition and Integrity is in the file titled dataAcquisitionScript.py. The documentation is in the file titled dataAcquisitionDocumentation.md
@@ -45,5 +42,8 @@ We didn't change our project from our Status Report as we didn't have any concer
 Michael - We both talked about and agreed on the conceptual part of our project, research questions, variables, and storage techniques. I did the IntegrationScript and Documentation, as well as the Documentation for the other scripts. Along with this I helped out Richard with any questions he had along the way. 
 
 Richard -
+
+## Conclusion
+We have been completing our work on time so far in our project. We have had no difficulties up to this point. 
 
 
