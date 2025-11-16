@@ -31,7 +31,7 @@ Not started.
 ### Week 5:
 Not Started.
 ### Week 6:
-Not Started
+Not Started.
 
 ## Updated Timeline
 Week 4 - 11/17-11/24. We will try to finish Week 4 and parts of Week 5 during this Week so we don't have to do much work over Thanksgiving break.
