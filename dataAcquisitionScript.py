@@ -11,7 +11,6 @@ path = kagglehub.dataset_download("ratin21/nba-player-salaries-2000-2025")
 
 csv_files = [f for f in os.listdir(path) if f.endswith('.csv')]
 
-
 file_path = os.path.join(path, csv_files[0])
 salary_df = pd.read_csv(file_path)
 salary_df.head()
@@ -41,3 +40,18 @@ with open("NBASalaries.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
 with open("NBASalaries.sha", "w") as f:
     f.write(sha256)
+
+def verify_sha(file_path, sha_path):
+    with open(file_path, "rb") as f:
+        current_hash = hashlib.sha256(f.read()).hexdigest()
+    with open(sha_path, "r") as f:
+        stored_hash = f.read().strip()
+    if current_hash == stored_hash:
+        print(f"✓ {file_path} integrity verified")
+        return True
+    else:
+        print(f"✗ {file_path} integrity FAILED")
+        return False
+
+verify_sha("NBASalaries.csv", "NBASalaries.sha")
+verify_sha("NBAPlayerStats.csv", "NBAPlayerStats.sha")
