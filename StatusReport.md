@@ -24,7 +24,8 @@ We finished up our Data Relation script, being stored in the file titled dataRel
 We finished creating our Data Integration script, being stored in the file title dataIntegrationScript.py, along with documenation in the file titled dataIntegrationDocumentation.md
 
 ### Week 4:
-Not started.
+Currently working on Data Analysis Script and creating visualization. Not yet finished.
+
 ### Week 5:
 Not Started.
 ### Week 6:
