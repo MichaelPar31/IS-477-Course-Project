@@ -18,6 +18,8 @@ As for Kaggle's terms of service, we will not host the raw .csv data files in ou
 
 When handling data about real individuals, even public figures, we must consider the ethical implications. Although player salaries and performance statistics are public information, our analysis aggregates this data in ways that could be misinterpreted to pass judgment on a player's value. The primary risk is that our findings could be used to label specific players as "overpaid" or "underpaid," a conclusion that is both negative and reductionist given the inevitable limitations of any statistical model. To mitigate this, our project's goal is not to critique individual players but to identify statistical correlations between performance metrics and salary trends. All published analysis will focus on these aggregate trends, not the "worth" of players, and will include clear disclaimers about the model's limitations while avoiding subjective or inflammatory language. We must also consider the risk of misinterpretation, as it is connected to the potential for algorithmic and metric bias. Our research question relies on the assumption that the available metrics are fair and comprehensive. However, traditional box-score statistics like points and rebounds are known to favor offensive players over defensive specialists, and our analysis might reinforce existing biases in how player value is determined. We will explicitly document this as a potential source of bias and a limitation of our analysis.
 
+We will primarily use CSV's and Files to facilitate Organization and Storage throughout our project. We will make sure to correclty name our files and clean our CSV's to create better readability
+
 ### Week 3:
 
 ### Week 4:
