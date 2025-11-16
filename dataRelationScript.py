@@ -8,7 +8,7 @@ con.sql("""
 CREATE TABLE salaries (
     Name TEXT,
     Salary INTEGER,
-    Season INTEGER,
+    Season INTEGER
 );
 """)
 
