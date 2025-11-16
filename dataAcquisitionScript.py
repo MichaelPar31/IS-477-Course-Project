@@ -24,12 +24,13 @@ path1 = kagglehub.dataset_download("flynn28/historical-nba-player-stats-database
 csv_files_player = [f for f in os.listdir(path1) if f.endswith('.csv')]
 
 file_path_player = os.path.join(path1, csv_files_player[0])
-player_data = pd.read_csv(file_path_player)
-print(f"Successfully loaded {csv_files_player[0]} into DataFrame.")
-player_data.head()
+player_data_df = pd.read_csv(file_path_player)
+player_data_df.head()
+
+player_data_df_actual = player_data_df[['Name', 'SEASON_ID', 'PTS', 'AST', 'REB', 'TOV']]
 
 output_csv_path = "NBAPlayerStats.csv"
-salary_df.to_csv(output_csv_path, index=False)
+player_data_df_actual.to_csv(output_csv_path, index=False)
 
 with open("NBAPlayerStats.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
