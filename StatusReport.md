@@ -21,6 +21,7 @@ When handling data about real individuals, even public figures, we must consider
 We will primarily use CSV's and Files to facilitate Organization and Storage throughout our project. We will make sure to correclty name our files and clean our CSV's to create better readability
 
 ### Week 3:
+Finished creating the dataIntegration script and Documentation.
 
 ### Week 4:
 Not started.
