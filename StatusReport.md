@@ -42,7 +42,11 @@ We didn't change our project from our Status Report as we didn't have any concer
 ## Individual Contribution
 Michael - We both talked about and agreed on the conceptual part of our project, research questions, variables, and storage techniques. I did the IntegrationScript and Documentation, as well as the Documentation for the other scripts. Along with this I helped out Richard with any questions he had along the way. 
 
-Richard -
+Richard - I worked on writing the script to download and perform the initial cleaning and validation of the two datasets.I also created the script necessary to link or join the two separate datasets (Player Salaries and Player Stats) using the shared Player variable, which is crucial for answering the research question. Both Michael and I worked collaboratively on all parts of the project, including the conceptual elements (research question, variables, storage techniques) and gave and received support whenever it was needed. 
+
+This is documented in the file titled dataRelationScript.py.
+
+Team Collaboration: He worked collaboratively with Michael on all parts of the project, including the conceptual elements (research question, variables, storage techniques) and received support from Michael on any coding questions he encountered.
 
 ## Conclusion
 We have been completing our work on time so far in our project. We have had no difficulties up to this point. 
