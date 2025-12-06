@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
 
-df = final_df.copy()
+df = pd.read_csv("results/final_data.csv")
 
 for col in ['Salary','PTS','AST','REB','TOV']:
     df[col] = pd.to_numeric(df[col], errors='coerce')
