@@ -20,9 +20,14 @@ rule data_analysis:
     input:
         final_data="results/final_df.csv"
     output:
-        results_csv="results/analysis_summary.csv",
+        results_csv="results/salary_correlation.csv",
         figure="results/salary_vs_pts.png"
     shell:
         "python scripts/data_analysis.py"
+
+rule run_all:
+    input:
+        "results/salary_correlation.csv",
+        "results/salary_vs_pts.png"
 
 
