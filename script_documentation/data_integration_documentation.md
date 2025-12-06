@@ -1,4 +1,4 @@
-## Script: dataIntegrationDocumentation
+## Script: data_integration
 
 This script integrates our two NBA datasets
 
