@@ -1,0 +1,28 @@
+rule acquire_data:
+    output:
+        salary_csv= "NBASalaries.csv",
+        salary_sha=: NBASalaries.sha",
+        stats_csv="data/NBAPlayerStats.csv",
+        stats_sha="data/NBAPlayerStats.sha"
+    shell:
+        "python scripts/data_acquisition.py"
+
+rule integrate_data:
+    input:
+        salary_csv="data/NBASalaries.csv",
+        stats_csv="data/NBAPlayerStats.csv"
+    output:
+        merged_csv="results/final_df.csv"
+    shell:
+        "python scripts/data_integration.py"
+
+rule data_analysis:
+    input:
+        final_data="results/final_df.csv"
+    output:
+        results_csv="results/analysis_summary.csv",
+        figure="results/salary_vs_pts.png"
+    shell:
+        "python scripts/data_analysis.py"
+
+
