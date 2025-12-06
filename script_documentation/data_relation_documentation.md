@@ -1,4 +1,4 @@
-### Script: dataRelationScript
+### Script: data_relation
 
 This script loads NBA player salary and stats data into a DuckDB relational database
 
