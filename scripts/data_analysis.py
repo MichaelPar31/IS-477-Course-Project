@@ -18,10 +18,8 @@ model = sm.OLS(y, X).fit()
 print(model.summary())
 
 performance_cols = ['Salary', 'PTS', 'AST', 'REB', 'TOV']
-corr_matrix = df[performance_cols].corr()
 salary_corr = corr_matrix['Salary'].sort_values(ascending=False)
-print("\nCorrelation with Salary:")
-print(salary_corr)
+salary_corr.to_csv("results/salary_correlation.csv", header=True)
 
 most_predictive_metric = salary_corr.index[1]
 print(f"\nMost predictive metric for Salary: {most_predictive_metric}")
@@ -33,4 +31,5 @@ plt.title(f'NBA Player Salary vs. {most_predictive_metric}', fontsize=16)
 plt.xlabel(most_predictive_metric, fontsize=12)
 plt.ylabel('Salary (in Millions USD)', fontsize=12)
 plt.grid(True, linestyle='--', alpha=0.3)
-plt.show()
+plt.savefig("results/salary_vs_metric.png")
+plt.close()
