@@ -40,4 +40,30 @@ This database contains season-by-season statistics for NBA players. The script f
 As for ethical implications, this type of detailed data is often used for sports betting. While analyzing the data is neutral, it is important to be aware that these metrics feed an industry associated with addictive behavior. Also, relying solely on efficiency numbers can reduce athletes to assets. By focusing solely on "Return on Investment," it ignores human factors like injuries, team leadership, and mental health.
 
 
+## Findings
+In order to answer our most significant research hypothesis about whether player statistics significantly correlate with salary, we ran a correlation analysis on the joined data set of NBA salaries and statistics from 2000-2024. By ensuring that we included only those players who had matching salary and statistics, we created a large enough sample to justify testing the hypothesis that points were the primary reason for a financial compensation average.
+
+The results of our correlation analysis returned strong positive correlations amongst all five metrics we used. The correlation coefficients for the metrics are as follows:
+- PTS: 0.504
+- TOV: 0.436
+- AST: 0.414
+- REB: 0.391
+- GP: 0.228
+
+With PTS as the single largest predictive measure of salary ($r \approx 0.50$), it's not surprising as conventional basketball wisdom tells us that scoring, the most finite asset to teams, is the most valuable asset. General Managers would much rather pay a premium for a "bucket-getter" than a "rebound-getter" or "assist-getter" - they'd much rather trade for that position. The graph below depicts this well; as PTS increases, salary generally increases along a positive slope.
+
+The weakest correlation ($r \approx 0.23$) - of all the metrics tested - was GP which indicates that merely showing up to work does not earn people a higher salary compared to what they produce on the court. A role player can play all 82 games and still make minimum salary; yet a star can play less and, by need (rest, injuries), still receive a max salary.
+
+The most surprising finding of our research was that TOV strongly positively correlates with Salary ($r \approx 0.44$) and is the second strongest correlation observed. One would think - as a negative category - higher turnovers equate to lower averages.
+
+However, we surmise that TOV can be seen as proxy for "Usage Rate". The highly paid players in the league (LeBron James, Luka Dončić) are tasked with ball handling at an offense-initiating rate for the majority of any given game. Therefore, they naturally accrue more turnovers simply by being given more opportunities to get them (often at their hands). Role players handle the ball less, thus having less access to turnovers - which means they earn less based on their position. Thus, higher numbers in turnovers is often a byproduct of high responsibility which equals high salary.
+
+Thus, while the correlations are positive, they are not very close to $1.0$, implying considerable variance away from the mean. Our examination of outliers at either end of the range implies two different types of outliers that distort the linear relationship:
+- High Salary Low Production (Injury/Guaranteed Money): Guaranteed contracts provide players with higher dollar values per season based on team commitment to injury riddled seasons. Our analysis determined that superstars who played low numbers of games (LeBron James - including his future guaranteed contract at $50.2M; Kevin Durant - $46.7M; Stephen Curry - $40.2M) scored fewer than 1,000 points (sometimes less than 100) in those seasons while retaining inflated salaries - one of the highest in the league. With production value called into question, however guaranteed salary is present, these dead money situations dilute the statistical connection between current season output and payments.
+- Low Salary High Production (Rookie Wage Scale): Inversely, due to an established rookie scale, rookie salaries are lower as younger stars outperform older players in terms of years spent on earth learning how to play basketball. Players like Paul Pierce and Devin Booker scored upwards of 1,700 points with average salaries of $2.0-2.2 million - less than 5% than older peers who commanded similar production value incomes. This structural market inefficiency proves that when it comes down to it, over time, statistics pay off; however, immediate figures reflect a range of tenure and subsequent contract dynamics.
+
+Overall, based on our findings, it's clear that although teams pay based on well-rounded performance efforts, scoring (PTS) remains the "gold standard" for high cash return value; Turnovers' unexpectedly strong positive correlation and significant outliers caused by injury/rookie guaranteed contracts suggest that financial returns are much less linked to efficiency and availability alone - but instead tenure and usage ability for better or worse.
+
+
+
 
