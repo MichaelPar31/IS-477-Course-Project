@@ -1,4 +1,4 @@
-## Script: dataAcquisitionScript
+## Script: data_acquistion
 
 This script dowloads two NBA datasets from Kaggle:
 - NBA Player Salaries (2000-2025)
