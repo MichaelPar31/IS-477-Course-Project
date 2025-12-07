@@ -96,6 +96,25 @@ Install all python dependencies and make sure you have the right software requir
 Run the Snakemake pipeline. The entire project is automated using Snakemake. To reproduce everything, run the Snakemake file. 
 After running Snakemake verify that the Data folders include NBASalaries.csv, NBASalaries.sha, NBAPlayerStats.csv, and NBAPlayerStats.sha. Then verify that the results folder includes final_df.csv, salary_correlation.csv, and salary_vs_pts.png.
 
+## References
+### Citations
+
+### Requirements
+=== SYSTEM INFORMATION ===
+Operating System: Linux-6.6.105+-x86_64-with-glibc2.35
+Python Version: 3.12.12 
+
+=== CPU ===
+CPU Count: 2
+
+=== RAM ===
+Total RAM (GB): 12.67
+
+=== DISK ===
+Total Disk (GB): 107.72
+Free Disk (GB): 69.53
+
+
 
 
 
