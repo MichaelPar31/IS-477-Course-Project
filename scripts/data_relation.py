@@ -1,14 +1,13 @@
 import duckdb
 
-con = duckdb.connect('nba_data.duckdb')
-
+con = duckdb.connect('database/nba_data.duckdb')
 con.sql("DROP TABLE IF EXISTS salaries;")
 
 con.sql("""
 CREATE TABLE salaries (
     Name TEXT,
     Salary INTEGER,
-    Season INTEGER
+    Season INTEGER,
 );
 """)
 
@@ -25,5 +24,5 @@ CREATE TABLE player_data (
 );
 """)
 
-con.sql("COPY salaries FROM 'NBASalaries.csv'")
-con.sql("COPY player_data FROM 'NBAPlayerStats.csv'")
+con.sql("COPY salaries FROM 'data/NBASalaries.csv'")
+con.sql("COPY player_data FROM 'data/NBAPlayerStats.csv'")
