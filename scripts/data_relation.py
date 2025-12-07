@@ -1,5 +1,4 @@
 import duckdb
-
 con = duckdb.connect('database/nba_data.duckdb')
 con.sql("DROP TABLE IF EXISTS salaries;")
 
@@ -20,7 +19,8 @@ CREATE TABLE player_data (
     REB INTEGER,
     AST INTEGER,
     PTS INTEGER,
-    TOV INTEGER
+    TOV INTEGER,
+    GP INTEGER
 );
 """)
 
