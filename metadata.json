@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "NBA Player Stats and Salaries (2000-2024)",
+  "description": "This dataset investigates the relationship between NBA player performance statistics (Points, Rebounds, Assists, Turnovers) and player salaries from 2000-2024. It was created by merging 'NBA Player Salaries (2000-2025)' and 'Historical NBA Player Stats Database'. It allows for the analysis of how measurable performance metrics impact player compensation.",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Richard"
+    },
+    {
+      "@type": "Person",
+      "name": "Michael"
+    }
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "temporalCoverage": "2000/2024",
+  "keywords": ["NBA", "Basketball", "Sports Analytics", "Salaries", "Performance Metrics"],
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Salary",
+      "description": "Annual player salary in USD"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "PTS",
+      "description": "Total points scored per season"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "AST",
+      "description": "Total assists per season"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "REB",
+      "description": "Total rebounds per season"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "TOV",
+      "description": "Total turnovers per season"
+    }
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "contentUrl": "final_df.csv",
+    "encodingFormat": "text/csv"
+  },
+  "isBasedOn": [
+    {
+      "@type": "Dataset",
+      "name": "NBA Player Salaries (2000-2025)",
+      "url": "https://www.kaggle.com/datasets/[dataset-id]"
+    },
+    {
+      "@type": "Dataset",
+      "name": "Historical NBA Player Stats Database",
+      "url": "https://www.kaggle.com/datasets/[dataset-id]"
+    }
+  ]
+}
