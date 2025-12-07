@@ -1,8 +1,15 @@
-### Script: data_relation
+# Script: data_relation
 
-This script loads NBA player salary and stats data into a DuckDB relational database
+This script creates a relational database using DuckDB to store NBA salary and player statistics data. The database consists of two primary tables: salaries and player_data.
 
-1. Connects to DuckDB database
-2. Drop existing tables if they exist
-3. Create tables with appropriate schema
-4. Load CSV data into the tables
+The databse is stored in [database](database/nba_data.duckdb).
+
+The Script sources data from [NBASalaries.csv](data/NBASalaries.csv) and [NBAPlayerStats.csv](data/NBASalaries.csv). 
+
+Script Steps
+1. Connects to a local DuckDB Database file
+2. Drops salaries table if exists to make room to make a new one
+3. Creates salaries table with columns Name, Salary, and Season
+4. Drops player_data table if exists to make room to make a new one
+5. Creates player_data table with columns, Name, SEASON_ID, REB, AST, PTS, TOV, GP
+6. Imports CSV files into DuckDB tables.
