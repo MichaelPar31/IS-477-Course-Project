@@ -15,8 +15,9 @@ file_path = os.path.join(path, csv_files[0])
 salary_df = pd.read_csv(file_path)
 salary_df.head()
 
-output_csv_path = "NBASalaries.csv"
+output_csv_path = "data/NBASalaries.csv"
 salary_df.to_csv(output_csv_path, index=False)
+
 
 path1 = kagglehub.dataset_download("flynn28/historical-nba-player-stats-database")
 
@@ -26,32 +27,17 @@ file_path_player = os.path.join(path1, csv_files_player[0])
 player_data_df = pd.read_csv(file_path_player)
 player_data_df.head()
 
-player_data_df_actual = player_data_df[['Name', 'SEASON_ID', 'PTS', 'AST', 'REB', 'TOV']]
+player_data_df_actual = player_data_df[['Name', 'SEASON_ID', 'PTS', 'AST', 'REB', 'TOV', 'GP']]
 
-output_csv_path = "NBAPlayerStats.csv"
+output_csv_path = "data/NBAPlayerStats.csv"
 player_data_df_actual.to_csv(output_csv_path, index=False)
 
-with open("NBAPlayerStats.csv", "rb") as f:
+with open("data/NBAPlayerStats.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
-with open("NBAPlayerStats.sha", "w") as f:
+with open("data/NBAPlayerStats.sha", "w") as f:
     f.write(sha256)
 
-with open("NBASalaries.csv", "rb") as f:
+with open("data/NBASalaries.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
-with open("NBASalaries.sha", "w") as f:
+with open("data/NBASalaries.sha", "w") as f:
     f.write(sha256)
-
-def verify_sha(file_path, sha_path):
-    with open(file_path, "rb") as f:
-        current_hash = hashlib.sha256(f.read()).hexdigest()
-    with open(sha_path, "r") as f:
-        stored_hash = f.read().strip()
-    if current_hash == stored_hash:
-        print(f"✓ {file_path} integrity verified")
-        return True
-    else:
-        print(f"✗ {file_path} integrity FAILED")
-        return False
-
-verify_sha("NBASalaries.csv", "NBASalaries.sha")
-verify_sha("NBAPlayerStats.csv", "NBAPlayerStats.sha")
