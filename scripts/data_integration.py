@@ -1,6 +1,9 @@
 import recordlinkage as rl
 import pandas as pd
 
+salary_df_clean = pd.read_csv("data/salary_df_clean.csv")
+player_data_df_clean = pd.read_csv("data/player_data_df_clean.csv")
+
 joined = salary_df_clean.merge(
     player_data_df_clean,
     on = ['Player', 'Season'],
@@ -71,4 +74,4 @@ salary_unmatched = salary_unmatched[['Player','Season','Salary','PTS','AST','REB
 stats_unmatched = stats_unmatched[['Player','Season','Salary','PTS','AST','REB','TOV', 'GP', 'IntegrationMethod','Source']]
 
 final_df = pd.concat([final_df, salary_unmatched, stats_unmatched], ignore_index=True)
-final_df.to_csv("data/final_df.csv", index=False)
+final_df.to_csv("results/final_df.csv", index=False)
