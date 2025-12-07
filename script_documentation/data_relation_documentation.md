@@ -1,4 +1,4 @@
-# Script: [data_relation](scripts/data_relation.py)
+# Script: [data_relation](../scripts/data_relation.py)
 
 This script creates a relational database using DuckDB to store NBA salary and player statistics data. The database consists of two primary tables: salaries and player_data.
 
