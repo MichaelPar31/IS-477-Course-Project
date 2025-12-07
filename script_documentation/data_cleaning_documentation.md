@@ -1,4 +1,4 @@
-# Script: [data_cleaning](scripts/data_cleaning.py)
+# Script: [data_cleaning](../scripts/data_cleaning.py)
 
 This script cleans and standardizes NBA player and salary data to prepare it for analysis and integration. 
 
