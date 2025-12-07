@@ -5,6 +5,7 @@ from pathlib import Path
 import gzip
 import io
 import os
+
 import kagglehub
 
 path = kagglehub.dataset_download("ratin21/nba-player-salaries-2000-2025")
@@ -27,14 +28,13 @@ file_path_player = os.path.join(path1, csv_files_player[0])
 player_data_df = pd.read_csv(file_path_player)
 player_data_df.head()
 
-player_data_df_actual = player_data_df[['Name', 'SEASON_ID', 'PTS', 'AST', 'REB', 'TOV', 'GP']]
+player_data_df = player_data_df[['Name', 'SEASON_ID', 'PTS', 'AST', 'REB', 'TOV', 'GP']]
 
 output_csv_path = "data/NBAPlayerStats.csv"
-player_data_df_actual.to_csv(output_csv_path, index=False)
-
-with open("data/NBAPlayerStats.csv", "rb") as f:
+player_data_df.to_csv(output_csv_path, index=False)
+with open("/data/NBAPlayerStats.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
-with open("data/NBAPlayerStats.sha", "w") as f:
+with open("/data/NBAPlayerStats.sha", "w") as f:
     f.write(sha256)
 
 with open("data/NBASalaries.csv", "rb") as f:
