@@ -98,6 +98,11 @@ After running Snakemake verify that the Data folders include NBASalaries.csv, NB
 
 ## References
 ### Citations
+Dataset 1 – NBA Player Salaries (2000–2025)
+Ratin21. (2025). NBA Player Salaries (2000–2025) [Dataset]. Kaggle. https://www.kaggle.com/datasets/ratin21/nba-player-salaries-2000-2025
+
+Dataset 2 – Historical NBA Player Stats Database
+Flynn28. (2025). Historical NBA Player Stats Database [Dataset]. Kaggle. https://www.kaggle.com/datasets/flynn28/historical-nba-player-stats-database/data
 
 ### Requirements
 === SYSTEM INFORMATION ===
@@ -114,7 +119,21 @@ Total RAM (GB): 12.67
 Total Disk (GB): 107.72
 Free Disk (GB): 69.53
 
-
+Required Python Packages:
+requests
+pandas
+hashlib
+pathlib
+os
+gzip
+io
+kagglehub
+duckdb
+recordlinkage
+matplotlib
+seaborn
+statsmodels
+There is also all record of all installed software, using ! pip freeze. This is recorded in [pip_packages.csv](pip_packages.csv)
 
 
 
