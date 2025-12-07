@@ -61,7 +61,7 @@ The most surprising finding of our research was that TOV strongly positively cor
 
 However, we surmise that TOV can be seen as proxy for "Usage Rate". The highly paid players in the league (LeBron James, Luka Dončić) are tasked with ball handling at an offense-initiating rate for the majority of any given game. Therefore, they naturally accrue more turnovers simply by being given more opportunities to get them (often at their hands). Role players handle the ball less, thus having less access to turnovers - which means they earn less based on their position. Thus, higher numbers in turnovers is often a byproduct of high responsibility which equals high salary.
 
-While the correlations are positive, they are not very close to $1.0$, implying considerable variance away from the mean. Our examination of outliers at either end of the range implies two different types of outliers that distort the linear relationship, this data is found in (high_salary_low_points)[results/high_salary_low_points.csv] and (low_salary_high_points)[results/low_salary_high_points.csv]:
+While the correlations are positive, they are not very close to $1.0$, implying considerable variance away from the mean. Our examination of outliers at either end of the range implies two different types of outliers that distort the linear relationship, this data is found in [high_salary_low_points](results/high_salary_low_points.csv) and [low_salary_high_points](results/low_salary_high_points.csv):
 - High Salary Low Production (Injury/Guaranteed Money): Guaranteed contracts provide players with higher dollar values per season based on team commitment to injury riddled seasons. Our analysis determined that superstars who played low numbers of games (LeBron James - including his future guaranteed contract at $50.2M; Kevin Durant - $46.7M; Stephen Curry - $40.2M) scored fewer than 1,000 points (sometimes less than 100) in those seasons while retaining inflated salaries - one of the highest in the league. With production value called into question, however guaranteed salary is present, these dead money situations dilute the statistical connection between current season output and payments.
 - Low Salary High Production (Rookie Wage Scale): Inversely, due to an established rookie scale, rookie salaries are lower as younger stars outperform older players in terms of years spent on earth learning how to play basketball. Players like Paul Pierce and Devin Booker scored upwards of 1,700 points with average salaries of $2.0-2.2 million - less than 5% than older peers who commanded similar production value incomes. This structural market inefficiency proves that when it comes down to it, over time, statistics pay off; however, immediate figures reflect a range of tenure and subsequent contract dynamics.
 
@@ -93,7 +93,7 @@ By making these economic adjustments and advanced modeling, we would go from sal
 ## How to reproduce
 Clone the Repository
 Install all python dependencies and make sure you have the right software requirements
-Run the Snakemake pipeline. The entire project is automated using Snakemake. To reproduce everything, run the Snakemake file. 
+Run the [Snakemake](Snakemake) pipeline. The entire project is automated using Snakemake. To reproduce everything, run the Snakemake file. 
 After running Snakemake verify that the Data folders include NBASalaries.csv, NBASalaries.sha, NBAPlayerStats.csv, and NBAPlayerStats.sha. Then verify that the results folder includes final_df.csv, salary_correlation.csv, and salary_vs_pts.png.
 
 ## References
