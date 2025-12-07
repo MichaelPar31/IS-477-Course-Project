@@ -54,5 +54,5 @@ def verify_sha(file_path, sha_path):
         print(f"✗ {file_path} integrity FAILED")
         return False
 
-verify_sha("NBASalaries.csv", "NBASalaries.sha")
-verify_sha("NBAPlayerStats.csv", "NBAPlayerStats.sha")
+verify_sha("data/NBASalaries.csv", "data/NBASalaries.sha")
+verify_sha("data/NBAPlayerStats.csv", "data/NBAPlayerStats.sha")
