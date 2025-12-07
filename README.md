@@ -77,16 +77,16 @@ Over the course of this project, we've identified multiple unexpected complicati
 While this project establishes baseline knowledge for how basic box-score statistics relate to compensation, there's so much more research that could extend its scope and accuracy.
 - Salary Cap Appreciation One of the great downfalls of our current study is nominal values. $20 million in 2001 when the salary cap was $42.5 million is much more impressive than $20 million in 2024 when the salary cap is $136 million. By comparing across 25 years in raw dollar form, we've unduly normalized the data.
 
-Future Work: We would take all salaries and put them in relative terms in Percentages of Salary Cap (%Cap). This would allow us to directly compare Shaquille O'Neal's 2001 dominance to Nikola Jokić's 2024 dominance from a like-for-like perspective without the noise from the exploding NBA economics thanks to television ad revenue.
+Future Work: Take all salaries and put them in relative terms in Percentages of Salary Cap (%Cap). This would allow us to directly compare Shaquille O'Neal's 2001 dominance to Nikola Jokić's 2024 dominance from a like-for-like perspective without the noise from the exploding NBA economics thanks to television ad revenue.
 - Advanced Statistics The study thus far has limited itself to counting stats (Points, Rebounds, Assists), sheer volume of accumulation without necessarily efficiency of statistical generation. Current NBA teams do not simply evaluate players on points per game.
 
-Future Work: We would broaden our feature set to include advanced statistics such as Player Efficiency Rating (PER), Win Shares (WS), Value Over Replacement Player (VORP), True Shooting Percentage (TS%). We believe that while volume scoring for the common public aligns with salary, efficiency measures will align for moderate contracts where teams are trying to make the most bang for their buck.
+Future Work: Broaden our feature set to include advanced statistics such as Player Efficiency Rating (PER), Win Shares (WS), Value Over Replacement Player (VORP), True Shooting Percentage (TS%). We believe that while volume scoring for the common public aligns with salary, efficiency measures will align for moderate contracts where teams are trying to make the most bang for their buck.
 - Lagged Regression Analysis To further support the lesson above on lagging indicators would be prospective work modeling delayed performance vs pay.
 
 Future Work: Instead of Stats(Year T) correlating with Salary(Year T), we would have Stats(Year T) correlate with Salary(Year T+1) or Salary(Year T+2). The "Contract Year" analysis (wherein players play their hardest the year before re-signing) would bring much stronger correlational power since it's aligned with GMs' data when they go to re-sign players.
 - Positional Aggregation Finally, this study has so far collapsed all players into one denominator. However, the market value of a stat changes based on who produces it. The Center who has 5 assists a game is valuable; the Point Guard who has 5 assists is average.
 
-Future Work: We would disaggregate the data by positions (Guard, Forward, Center). We would presume Rebounds will have a much higher correlation with salary among Centers while Assist/Turnover ratio will be the true defining statistic among Point Guards.
+Future Work: Disaggregate the data by positions (Guard, Forward, Center). We would presume Rebounds will have a much higher correlation with salary among Centers while Assist/Turnover ratio will be the true defining statistic among Point Guards.
 
 By making these economic adjustments and advanced modeling, we would go from salary descriptive analytics to predictive analytics and truly establish Fair Market Value calculations for NBA Players
 
