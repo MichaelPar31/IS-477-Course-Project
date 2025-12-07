@@ -1,6 +1,9 @@
 import pandas as pd
 import numpy as np
 
+salary_df = pd.read_csv("data/NBASalaries.csv")
+player_data_df = pd.read_csv("data/NBAPlayerStats.csv")
+
 def normalize_name(name):
     name = str(name).lower().strip()
     name = (
@@ -13,8 +16,11 @@ def normalize_name(name):
             cleaned.append(ch)
         else:
             cleaned.append("")
+
     name = "".join(cleaned)
+
     name = " ".join(name.split())
+
     return name
 
 def normalize_season(season):
@@ -36,3 +42,7 @@ player_data_df['Season'] = player_data_df['Season'].apply(normalize_season)
 salary_df['Season'] = salary_df['Season'].apply(normalize_season)
 player_data_df_clean = player_data_df.dropna()
 salary_df_clean = salary_df.dropna()
+output_csv_path = "data/salary_df_clean.csv"
+salary_df_clean.to_csv(output_csv_path, index=False)
+output_csv_path = "data/player_data_df_clean.csv"
+player_data_df_clean.to_csv(output_csv_path, index=False)
