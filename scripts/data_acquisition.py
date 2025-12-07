@@ -41,3 +41,18 @@ with open("data/NBASalaries.csv", "rb") as f:
     sha256 = hashlib.sha256(f.read()).hexdigest()
 with open("data/NBASalaries.sha", "w") as f:
     f.write(sha256)
+
+def verify_sha(file_path, sha_path):
+    with open(file_path, "rb") as f:
+        current_hash = hashlib.sha256(f.read()).hexdigest()
+    with open(sha_path, "r") as f:
+        stored_hash = f.read().strip()
+    if current_hash == stored_hash:
+        print(f"✓ {file_path} integrity verified")
+        return True
+    else:
+        print(f"✗ {file_path} integrity FAILED")
+        return False
+
+verify_sha("NBASalaries.csv", "NBASalaries.sha")
+verify_sha("NBAPlayerStats.csv", "NBAPlayerStats.sha")
