@@ -13,6 +13,8 @@ This script dowloads two NBA datasets from Kaggle:
    - **AST:** Assists
    - **REB:** Rebounds
    - **TOV:** Turnovers
+   - **GP:** Games Played
+   These are the relevant columns that we thought salaries should be based on.
 6. Saves cleaned datasets locally as CSV Files
 7. Computes SHA256 hashes for both CSV files to ensure data integrity
 8. Verifies Integrity of saved files against SHA256 Hashes
