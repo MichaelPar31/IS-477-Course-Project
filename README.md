@@ -122,7 +122,7 @@ Free Disk (GB): 69.53
 Required Python Packages:
 requests, pandas, hashlib, pathlib, os, gzip, io, kagglehub, duckdb, recordlinkage, matplotlib, seaborn, statsmodels
 
-There is also all record of all installed software, using ! pip freeze. This is recorded in [requirements.txt](requirements.txt)
+There is also all record of all installed software, using ! pip freeze. This is recorded in [pip_packages.csv](pip_packages.csv), with a more standard version in [requirements.txt](requirements.txt)
 
 
 
