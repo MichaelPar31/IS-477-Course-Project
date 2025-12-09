@@ -3,7 +3,8 @@
 This script dowloads two NBA datasets from Kaggle:
 - NBA Player Salaries (2000-2025)
 - Historical NBA Player Stats
-We decided to use Kaggle instead of the Primary source as the Salary dataset does not offer scraping of the Data. NBA.com does not publish salaries and other sites such as Spotrac prohibit scraping. Since we didn't use the Original Datasource for the Salary dataset, we decided to keep it uniform and use Kaggle for the Playerstats data set as well.
+
+- We decided to use Kaggle instead of the Primary source as the Salary dataset does not offer scraping of the Data. NBA.com does not publish salaries and other sites such as Spotrac prohibit scraping. Since we didn't use the Original Datasource for the Salary dataset, we decided to keep it uniform and use Kaggle for the Playerstats data set as well.
 
 1. Downloads both datasets using kagglehub
 2. Reads CSV into Pandas dataframe
